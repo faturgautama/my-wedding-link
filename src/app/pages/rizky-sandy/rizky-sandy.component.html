@@ -1,0 +1,359 @@
+<section id="kiki_sandy">
+    <audio #backgroundAudio>
+        <source src="../../../assets/background_song/background_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btnPlaySong" [hidden]="true" (click)="backgroundAudio.play()">
+        Play Song
+    </button>
+
+    <!-- Quote -->
+    <section id="quote" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center px-4">
+                <p class="text-hitam mb-4 fw-light font-petite-script" data-aos="fade-down" data-aos-duration="2200">
+                    QS. Ar-Rum Ayat 21
+                </p>
+                <p class="text-hitam mb-0 fw-light text-semibold font-inter font-12" data-aos="fade-down"
+                    data-aos-duration="2300">
+                    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+                    jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+                    antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda
+                    (kebesaran Allah) bagi kaum yang berpikir."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calon Pengantin -->
+    <section id="calon_pengantin">
+        <div class="row h-100">
+            <!-- Title -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3">
+                <h2 class="font-petite-script text-coklat fw-semibold" data-aos="fade-down" data-aos-duration="2300">
+                    Calon Pengantin
+                </h2>
+            </div>
+
+            <!-- Ilustrasi -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg_bride_ilustration" data-aos="fade-down"
+                data-aos-duration="2300">
+                <img src="../../../assets/image/bride_2.png" alt="bride" class="bride_ilustration">
+            </div>
+
+            <!-- Mempelai Wanita -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h5 class="font-petite-script text-coklat fw-normal mb-2" data-aos="fade-left" data-aos-duration="2000">
+                    Rizky Dian Mardiyana
+                </h5>
+                <p class="font-inter text-hitam fw-light mb-0" data-aos="fade-left" data-aos-duration="2000">
+                    Putri dari
+                </p>
+                <p class="font-inter text-hitam fw-light mb-3" data-aos="fade-left" data-aos-duration="2000">
+                    Bapak Madiyono & Ibu Mugini
+                </p>
+                <p class="font-petite-script text-coklat fw-light mb-3" data-aos="fade-up" data-aos-duration="2000">
+                    &
+                </p>
+                <h5 class="font-petite-script text-coklat fw-normal mb-2" data-aos="fade-right"
+                    data-aos-duration="2000">
+                    Kurnia Sandy
+                </h5>
+                <p class="font-inter text-hitam fw-light mb-0" data-aos="fade-right" data-aos-duration="2000">
+                    Putra dari
+                </p>
+                <p class="font-inter text-hitam fw-light mb-0" data-aos="fade-right" data-aos-duration="2000">
+                    Bapak Joko Sri Widodo & Ibu Yuni Susanti
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown -->
+    <section id="countdown" data-aos="fade-down" data-aos-duration="2300">
+        <div class="row h-100 align-items-center">
+            <!-- Title -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3">
+                <h2 class="font-petite-script text-coklat fw-semibold" data-aos="fade-down" data-aos-duration="2300">
+                    Akan Diselenggarakan Pada
+                </h2>
+            </div>
+
+            <!-- Countdown Hari -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3" data-aos="fade-up"
+                data-aos-duration="2300">
+                <h2 class="font-petite-script fw-light mb-2 text-coklat countdown_text">
+                    {{ daysToDateEvent }}
+                </h2>
+                <p class="text-hitam font-inter fw-light mb-0">
+                    Hari
+                </p>
+            </div>
+
+            <!-- Countdown Others -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3">
+                <div class="row justify-content-center">
+                    <div class="col-3 text-center" data-aos="fade-right" data-aos-duration="2300">
+                        <h2 class="font-petite-script fw-light mb-2 text-coklat countdown_text">
+                            {{ hoursToDateEvent }}
+                        </h2>
+                        <p class="text-hitam font-inter fw-light">
+                            Jam
+                        </p>
+                    </div>
+                    <div class="col-3 text-center" data-aos="fade-down" data-aos-duration="2300">
+                        <h2 class="font-petite-script fw-light mb-2 text-coklat countdown_text">
+                            {{ minutesToDateEvent }}
+                        </h2>
+                        <p class="text-hitam font-inter fw-light">
+                            Menit
+                        </p>
+                    </div>
+                    <div class="col-3 text-center" data-aos="fade-left" data-aos-duration="2300">
+                        <h2 class="font-petite-script fw-light mb-2 text-coklat countdown_text">
+                            {{ secondsToDateEvent }}
+                        </h2>
+                        <p class="text-hitam font-inter fw-light">
+                            Detik
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tanggal -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3">
+                <p class="text-hitam font-inter fw-light" data-aos="fade-up" data-aos-duration="2300">
+                    Minggu, 27 November 2022
+                </p>
+            </div>
+
+            <!-- Tambahkan Ke Kalender -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <button class="btn btn-coklat btn-sm" type="button" (click)="handleAddToCalendar()"
+                    data-aos="fade-right" data-aos-duration="2300">
+                    Simpan Ke Kalender
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peta -->
+    <section id="maps">
+        <div class="row">
+            <!-- Iframe Maps -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.48556423717326!2d110.49455608810233!3d-7.036410160893152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb96b1b672cfd3c71!2zN8KwMDInMTEuNCJTIDExMMKwMjknNDEuMCJF!5e0!3m2!1sid!2sid!4v1668440928323!5m2!1sid!2sid"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Alamat Lengkap -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <p class="font-inter fw-light text-hitam mb-0">
+                    Jl. Pucang Anom V No 25 RT 08 RW 18 Kel. Batursari Kec. Mranggen Kab. Demak
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acara -->
+    <section id="acara" data-aos="fade-down" data-aos-duration="2300">
+        <div class="row">
+            <!-- Akad Nikah -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-5" data-aos="fade-left"
+                data-aos-duration="2300">
+                <h2 class="font-petite-script text-coklat fw-semibold mb-3">
+                    Akad Nikah
+                </h2>
+                <p class="text-hitam mb-0 fw-normal">
+                    Selasa, 22 November 2022
+                </p>
+                <p class="text-hitam mb-2 fw-light">
+                    09.00 WIB
+                </p>
+                <button class="btn btn-coklat btn-sm" type="button" (click)="handleOpenMaps()">
+                    Lihat Lokasi
+                </button>
+            </div>
+
+            <!-- Resepsi -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-5" data-aos="fade-right"
+                data-aos-duration="2300">
+                <h2 class="font-petite-script text-coklat fw-semibold mb-3">
+                    Resepsi
+                </h2>
+                <p class="text-hitam mb-0 fw-normal">
+                    Minggu, 27 November 2022
+                </p>
+                <p class="text-hitam mb-2 fw-light">
+                    10.00 - 13.00 WIB
+                </p>
+                <button class="btn btn-coklat btn-sm" type="button" (click)="handleOpenMaps()">
+                    Lihat Lokasi
+                </button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <p class="font-inter fw-light text-hitam font-12">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan
+                    hadir untuk memberikan do'a restunya kami ucapkan terimakasih.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kirim Ucapan -->
+    <section id="kirim_ucapan">
+        <div class="row">
+            <!-- Title -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-3">
+                <h2 class="font-petite-script text-coklat fw-semibold" data-aos="fade-down" data-aos-duration="2300">
+                    Kirim Ucapan
+                </h2>
+            </div>
+
+            <!-- List -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-3" data-aos="fade-right" data-aos-duration="2400">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-header bg-transparent">
+                        <p class="mb-0 fw-light font-12 text-coklat font-inter">
+                            <i class="fa-solid fa-dove"></i>&nbsp; {{ Ucapan.length }} Ucapan
+                        </p>
+                    </div>
+                    <div class="card-body card_ucapan">
+                        <div *ngFor="let item of Ucapan" [id]="item.id" class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-2 pb-2 border-bottom">
+                                <p class="sender text-coklat fw-semibold mb-1 font-inter d-flex align-items-center">
+                                    {{ item.nama_lengkap }}
+                                    <span class="ms-auto font-12 fw-light">
+                                        <i class="fa-solid fa-check"></i>&nbsp;
+                                        {{ item.is_hadir ? 'Hadir' : 'Tidak Hadir' }}
+                                    </span>
+                                </p>
+                                <p class="time text-secondary fw-light font-12 mb-1 font-inter">
+                                    {{ item.time | date: 'dd MMMM yyyy' }}
+                                </p>
+                                <p class="content text-hitam fw-light mb-1 font-12 font-inter">
+                                    "{{ item.ucapan }}"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Send Message -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-left" data-aos-duration="2400">
+                <div class="card bg-transparent border-0 shadow-sm">
+                    <div class="card-header bg-transparent border-0">
+                        <p class="text-hitam fw-light text-center font-petite-script mb-0">
+                            Kirim Ucapan Untuk Kami
+                        </p>
+                    </div>
+                    <div class="card-body" [formGroup]="FormUcapan">
+                        <div class="row">
+                            <!-- Nama Lengkap -->
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-3">
+                                <input type="text" class="form-control" id="nama_lengkap" placeholder="Nama Lengkap"
+                                    formControlName="nama_lengkap">
+                            </div>
+
+                            <!-- Ucapan -->
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-3">
+                                <textarea class="form-control" id="ucapan" rows="5"
+                                    placeholder="Selamat Mengarungi Bahtera Rumah Tangga"
+                                    formControlName="ucapan"></textarea>
+                            </div>
+
+                            <!-- Ucapan -->
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="is_hadir" id="saya_hadir"
+                                        [value]="true" formControlName="is_hadir">
+                                    <label class="form-check-label" for="saya_hadir">Saya Akan Hadir</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="is_hadir" id="saya_tidak_hadir"
+                                        [value]="false" formControlName="is_hadir">
+                                    <label class="form-check-label" for="saya_tidak_hadir">
+                                        Saya Tidak Dapat Hadir
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 d-grid gap-2 mb-2">
+                                <button class="btn btn-coklat btn-sm" type="button"
+                                    (click)="handleSubmitUcapan(FormUcapan.value)">
+                                    Kirim Ucapan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amplop Undangan -->
+    <section id="amplop_undangan" data-aos="fade-down" data-aos-duration="2300">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <p class="font-petite-script text-coklat" data-aos="fade-down" data-aos-duration="2300">
+                    Kirim Amplop Undangan
+                </p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <img src="../../../assets/image/bca.png" alt="" style="width: 5rem; height: auto" data-aos="fade-up"
+                    data-aos-duration="2400">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="text-center font-inter text-hitam fw-light mb-1" data-aos="fade-up" data-aos-duration="2500">
+                    Bank BCA a/n Rizky Dian Mardiyana
+                </p>
+                <p class="text-center font-inter text-hitam fw-light" data-aos="fade-up" data-aos-duration="2600">
+                    No. Rek : 8545518194
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You -->
+    <section id="thank_you">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h5 class="font-inter text-coklat fw-light" data-aos="fade-up" data-aos-duration="2300">
+                    Kami Yang Berbahagia
+                </h5>
+                <p class="font-inter text-coklat fw-light mb-5" data-aos="fade-left" data-aos-duration="2300">
+                    Keluarga Besar
+                </p>
+                <h5 class="font-petite-script text-coklat fw-semibold mb-2" data-aos="fade-right"
+                    data-aos-duration="2300">
+                    Rizky Dian Mardiyana
+                    <br>
+                    <span class="font-inter font-12 fw-light">
+                        &
+                    </span>
+                    <br>
+                    Kurnia Sandy
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 text-center">
+                <p class="text-abu mb-0 font-inter font-12">
+                    Made With &nbsp;<i class="fab fa-angular text-danger"></i>&nbsp;
+                    <span (click)="handleClickFooter()">
+                        By Fatur Gautama S
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+</section>

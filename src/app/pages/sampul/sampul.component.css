@@ -1,0 +1,22 @@
+section#sampul {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: var(--pink);
+}
+
+.container_sampul {
+  background-image: url("../../../assets/image/ornamen_3.png"),
+    url("../../../assets/image/ornamen_5.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75%, 75%;
+}
+
+.flower_bordered {
+  height: 20rem;
+  background-image: url("../../../assets/image/flower_border.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20rem;
+}

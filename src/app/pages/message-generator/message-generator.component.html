@@ -1,0 +1,43 @@
+<section id="message_generator">
+    <div class="row justify-content-center">
+        <!-- Generator -->
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 mb-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white border-0 pb-0 pt-3 text-center">
+                    <h5 class="font-inter text-coklat fw-normal mb-0">
+                        Buat Undangan
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Nama Lengkap -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-2">
+                            <input #NamaLengkap type="text" class="form-control font-inter"
+                                placeholder="Nama Lengkap Tamu Undangan">
+                        </div>
+
+                        <!-- Button -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-3 d-grid gap-2">
+                            <button class="btn bg-coklat text-abu" type="button"
+                                (click)="handleGenerateUndangan(NamaLengkap.value)">
+                                Buat Undangan
+                            </button>
+                        </div>
+
+                        <!-- Undangan -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-2 mb-3 border-top">
+                            <p #Hasil id="hasil" class="font-inter mb-0 font-12"></p>
+                        </div>
+
+                        <div *ngIf="HasilHasBeenGenerated"
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0 mb-3 d-grid gap-2">
+                            <button class="btn bg-coklat text-abu" type="button" (click)="handleCopyUndangan()">
+                                Copy Undangan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

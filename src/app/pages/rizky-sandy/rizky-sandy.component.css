@@ -1,0 +1,127 @@
+section#kiki_sandy {
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  background-color: var(--pink);
+}
+
+@media only screen and (min-width: 575.98px) {
+  section#kiki_sandy {
+    width: 575.98px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section#quote {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url("../../../assets/image/orname_1.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+section#calon_pengantin {
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/image/ornamen_2.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg_bride_ilustration {
+  background-image: url("../../../assets/image/flower_border.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  height: 20rem;
+  max-height: 20rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 2rem;
+}
+
+img.bride_ilustration {
+  height: 10rem;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+}
+
+section#countdown {
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/image/ornamen_5.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+}
+
+section#countdown::before {
+  content: "";
+  border-bottom: 3px solid var(--coklat);
+  width: 25%;
+  display: block;
+  margin: 20px 0;
+}
+
+h2.countdown_text {
+  font-size: 2rem;
+}
+
+section#acara {
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/image/ornamen_3.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+section#acara::before {
+  content: "";
+  border-bottom: 3px solid var(--coklat);
+  width: 25%;
+  display: block;
+  margin: 20px 0 20px 0;
+}
+
+section#kirim_ucapan {
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/image/orname_1.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.card_ucapan {
+  height: 26rem;
+  max-height: 26rem;
+  overflow-y: auto;
+}
+
+section#amplop_undangan {
+  padding-bottom: 5rem;
+  background-image: url("../../../assets/image/ornamen_5.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 15rem;
+}
+
+section#amplop_undangan::before {
+  content: "";
+  border-bottom: 3px solid var(--coklat);
+  width: 25%;
+  display: block;
+  margin: 20px 0 20px 0;
+}
+
+section#thank_you {
+  padding-bottom: 10rem;
+  background-image: url("../../../assets/image/ornamen_4.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section#footer {
+  background-color: var(--hitam) !important;
+}

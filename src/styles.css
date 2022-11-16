@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --coklat: #d5af81;
+  --abu: #fbfcf4;
+  --pink: #fdfbf7;
+  --hitam: #282828;
+}
+
+html,
+body {
+  background-color: var(--pink) !important;
+}
+
+.form-control:focus,
+.form-control:active {
+  box-shadow: none !important;
+}
+
+.font-petite-script {
+  font-family: "Petit Formal Script", cursive !important;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-coklat {
+  color: var(--coklat) !important;
+}
+
+.bg-coklat {
+  background-color: var(--coklat) !important;
+}
+
+.btn-coklat {
+  background-color: var(--coklat) !important;
+  border-radius: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  color: var(--abu) !important;
+}
+
+.text-abu {
+  color: var(--abu) !important;
+}
+
+.bg-abu {
+  background-color: var(--abu) !important;
+}
+
+.text-pink {
+  color: var(--pink) !important;
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.text-hitam {
+  color: var(--hitam) !important;
+}
+
+.bg-hitam {
+  background-color: var(--hitam) !important;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-shadow {
+  text-shadow: 1px 3px 2px rgba(128, 128, 128, 0.32);
+}
