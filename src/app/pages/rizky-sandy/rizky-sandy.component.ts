@@ -123,7 +123,7 @@ export class RizkySandyComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     handleClickFooter(): void {
-        window.open('https://faturgautama.site');
+        window.open('https://trijuna-pratama.com');
     }
 
     ngOnDestroy(): void {
